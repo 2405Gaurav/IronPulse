@@ -58,7 +58,7 @@ const SignIn = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex">
+    <div className="min-h-screen  bg-gradient-to-br from-gray-50 to-gray-100 flex">
       {/* Left Panel - Image */}
       <div className="hidden lg:flex lg:w-1/2 relative">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 backdrop-blur-sm z-10" />

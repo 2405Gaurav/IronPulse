@@ -1,99 +1,69 @@
-import { ArrowRight, Dumbbell } from "lucide-react";
+import { ArrowRight, Dumbbell, Instagram, Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
-    <>
-      {/* Footer with improved styling */}
-      <footer className="px-6 py-16 text-white bg-gray-900 ">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-4">
-            <div>
-              <div className="flex gap-4 items-center mb-4">
-                <div className="p-2 bg-gradient-to-br from-purple-600 to-indigo-500 rounded-lg shadow-md">
-                  <Dumbbell className="w-5 h-5 text-white" />
-                </div>
-                <h1 className="text-3xl font-bold">ABLIFT</h1>
-              </div>
-              <p className="mb-4 text-gray-400">
-                Your personal guide to fitness excellence
-              </p>
-              <p className="text-gray-400">Created by ABHAY BANSAL </p>
+    <footer className="bg-gradient-to-r from-slate-50 to-blue-50 border-t border-blue-100">
+      <div className="container mx-auto px-6 py-8">
+        {/* Main content - compact layout */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          
+          {/* Brand section - simplified */}
+          <div className="flex items-center gap-3">
+            <div className="p-2 bg-gradient-to-r from-blue-100 to-sky-100 border border-blue-200 rounded-lg">
+              <Dumbbell className="w-5 h-5 text-blue-600" />
             </div>
-
             <div>
-              <h2 className="mb-4 text-lg font-bold">Quick Links</h2>
-              <ul className="space-y-2">
-                {[
-                  "Home",
-                  "Exercises",
-                  "Workout Plans",
-                  "Diet Plans",
-                  "Find Gyms",
-                ].map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="flex gap-2 items-center text-gray-400 transition-colors duration-200 hover:text-white"
-                    >
-                      <ArrowRight className="w-3 h-3" />
-                      {link}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="mb-4 text-lg font-bold">Connect</h2>
-              <ul className="space-y-2">
-                {[
-                  "Instagram",
-                  "LinkedIn",
-                  "Twitter",
-                  "Facebook",
-                  "YouTube",
-                ].map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-gray-400 transition-colors duration-200 hover:text-white"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="mb-4 text-lg font-bold">Legal</h2>
-              <ul className="space-y-2">
-                {[
-                  "Privacy Policy",
-                  "Terms of Service",
-                  "Cookie Policy",
-                  "GDPR",
-                ].map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-gray-400 transition-colors duration-200 hover:text-white"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-sky-600 bg-clip-text text-transparent">
+                IronPulse
+              </h1>
+              <p className="text-xs text-slate-500">by Gaurav Thakur</p>
             </div>
           </div>
 
-          <div className="pt-8 mt-12 text-center text-gray-400 border-t border-gray-800">
-            © 2024 ABLIFT. All rights reserved.
+          {/* Quick links - horizontal */}
+          <div className="flex flex-wrap gap-6 text-sm">
+            {["Home", "Exercises", "Plans", "Gyms"].map((link) => (
+              <a
+                key={link}
+                href="#"
+                className="text-slate-600 hover:text-blue-600 transition-colors duration-200 font-medium"
+              >
+                {link}
+              </a>
+            ))}
+          </div>
+
+          {/* Social icons - compact */}
+          <div className="flex gap-2">
+            {[
+              { icon: Instagram, color: "hover:text-pink-500" },
+              { icon: Linkedin, color: "hover:text-blue-600" },
+              { icon: Twitter, color: "hover:text-sky-500" },
+              { icon: Facebook, color: "hover:text-blue-700" },
+              { icon: Youtube, color: "hover:text-red-500" },
+            ].map(({ icon: Icon, color }, index) => (
+              <a
+                key={index}
+                href="#"
+                className={`p-2 text-slate-400 ${color} transition-colors duration-200 hover:bg-white/50 rounded-lg`}
+              >
+                <Icon className="w-4 h-4" />
+              </a>
+            ))}
           </div>
         </div>
-      </footer>
-      ;
-    </>
+
+        {/* Bottom bar - minimal */}
+        <div className="mt-6 pt-4 border-t border-blue-100 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-slate-500">
+          <p>© 2024 IronPulse. All rights reserved.</p>
+          <div className="flex gap-4">
+            <a href="#" className="hover:text-blue-600 transition-colors">Privacy</a>
+            <a href="#" className="hover:text-blue-600 transition-colors">Terms</a>
+            <a href="#" className="hover:text-blue-600 transition-colors">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
 
