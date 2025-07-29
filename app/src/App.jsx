@@ -1,4 +1,4 @@
-import React from "react";
+
 import Register from "./Logins/Register";
 import SignIn from "./Logins/SignIn";
 import { Route, Routes } from "react-router-dom";

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import  { useState, useRef, useEffect } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import Webcam from "react-webcam";
 import { FiSend, FiX, FiCamera, FiUpload, FiChevronDown, FiChevronUp, FiTrash2 } from "react-icons/fi";
