@@ -67,8 +67,8 @@ const Register = () => {
             Start Your Journey to Better Health
           </h2>
           <p className="text-lg opacity-90">
-            Join thousands of users who have transformed their lives with
-            ABLIFT's personalized health tracking and insights.
+            Join IronPulse to transform your lives with IronPulse&apos;s
+            personalized health tracking and insights.
           </p>
         </div>
       </div>

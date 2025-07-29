@@ -5,16 +5,10 @@ import {
   Dumbbell,
   X,
   Menu,
-  User,
-  Search,
-  Bell,
+ 
   ChevronDown,
   LogOut,
-  Settings,
-  Camera,
-  Upload,
-  Check,
-  UserCircle,
+ 
   ScanLine,
 } from "lucide-react";
 
@@ -138,7 +132,7 @@ const NavBar = () => {
             <Dumbbell className="w-5 h-5 text-white" />
           </motion.div>
           <h1 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-400 transition-all group-hover:from-purple-500 group-hover:to-indigo-300">
-            ABLIFT
+            IronPulse
           </h1>
         </Link>
 

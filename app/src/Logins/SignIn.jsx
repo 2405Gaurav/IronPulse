@@ -73,7 +73,7 @@ const SignIn = () => {
             Welcome Back to Better Health
           </h2>
           <p className="text-lg opacity-90">
-            Continue your fitness journey with ABLIFT's personalized tracking
+            Continue your fitness journey with IronPulse&apos;s personalized tracking
             and insights.
           </p>
         </div>
@@ -90,7 +90,7 @@ const SignIn = () => {
                 className="w-12 h-12"
               />
             </div>
-            <h1 className="text-2xl font-bold">Sign In to ABLIFT</h1>
+            <h1 className="text-2xl font-bold">Sign In to IronPulse</h1>
             <p className="text-gray-600">Enter your credentials to continue</p>
           </div>
 
@@ -169,7 +169,7 @@ const SignIn = () => {
 
             {/* Register Link */}
             <div className="text-center text-sm text-gray-600">
-              Don't have an account?{" "}
+              Don&apos;t have an account?{" "}
               <Link
                 to="/register"
                 className="font-medium text-purple-600 hover:underline"
